@@ -1,0 +1,199 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Radiotechnika';
+    src: url('../fonts/Radiotechnika.otf') format('truetype');
+}
+
+body {
+    font-family: 'Radiotechnika', Arial, sans-serif;
+    background-color: #000;
+}
+
+
+
+
+.flexBox {
+    width: 100%;
+    display: flex;
+    z-index: 100 !important;
+    gap: 20px;
+    justify-content: center;
+    margin-top: -30px;
+}
+
+.nickname {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.loginForm {
+    margin-top: 50px;
+}
+
+.nickname h1 {
+    color: white;
+}
+
+.nickname p {
+    color: gainsboro;
+    margin-top: 10px;
+}
+
+.mainBg {
+    background-color: #000;
+    position: relative;
+    height: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.topBg {
+    height: 100px;
+    width: 100%;
+    z-index: -1;
+    background-image: url('../img/bg.jfif');
+    background-size: cover;
+    /* или contain, в зависимости от ваших нужд */
+    background-position: center;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.account {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.bgInf {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 30%;
+    /*     z-index: -4 !important;
+ */
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    block-size: cover;
+    background-position: center;
+    background-color: #050505;
+}
+
+.bgInf img {
+    width: 63%;
+    z-index: -100;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 350px;
+}
+
+.label-text {
+    font-size: 14px;
+    color: #ffffff;
+    /* Серый цвет текста */
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    color: #fff;
+    font-size: 16px;
+    padding: 5px 0;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.input::placeholder {
+    color: #666;
+    font-size: 14px;
+}
+
+.input:focus {
+    border-bottom: 1px solid #888;
+}
+
+.balance {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 13px;
+    gap: 5px;
+    position: absolute;
+    top: 25%;
+    right: 5%;
+    white-space: nowrap;
+}
+
+.balance img {
+    width: 50px;
+}
+
+.starCoinBox {
+    display: flex;
+    gap: 100%;
+    justify-content: space-between;
+}
+
+.starCoinBox img {
+    width: 50px;
+}
+
+@media (max-width:1000px) {}
+
+@media (max-width:850px) {
+    .balance {
+        top: 5%;
+        right: 4%;
+    }
+}
+
+@media (max-width:600px) {
+    .flexBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 100 !important;
+        gap: 0px;
+        justify-content: center;
+    }
+
+    .balance {
+        font-size: 10px
+    }
+
+
+
+    .balance img {
+        width: 40px;
+    }
+
+    .nickname {
+        justify-content: center;
+    }
+
+    .loginForm {
+        margin-top: 10px;
+    }
+
+    .form {
+        width: 100%;
+    }
+}
